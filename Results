@@ -1,0 +1,26 @@
+public class Results{
+	public static void main(String[] args) {
+		subjects();
+	}
+
+	public static void subjects() {
+
+		int physics = 84;
+		int biology = 140;
+		int chemestry = 150;
+		int total = (physics+biology+chemestry);
+		float percentage = total*100 / 450; 
+
+		System.out.println("your physics score is: " + physics);
+		System.out.println("your biology score is: " + biology);
+		System.out.println("your chemestry score is: " + chemestry);
+		System.out.println("your total score is: " + total);
+		System.out.println("your final score is: " +percentage);
+		if (percentage< 60 || (biology/1.5)< 60 || (chemestry/1.5)< 60|| (physics/1.5)< 60) {
+			System.out.println("You fail!");
+		}else{
+			System.out.println("You pass!");
+		}
+	}
+	
+}
