@@ -1,0 +1,14 @@
+public class Blackjack{
+	public static void main(String[] args){
+		game(20,18);
+	}
+	public static void game(int a,int b) {
+		if (a>b && a<21) {
+			System.out.println(a);
+		}else if (b>a && b<21) {
+			System.out.println(b);
+			}else if (a>21 && b>21) {
+				System.out.println(0);
+			}
+	}
+}
