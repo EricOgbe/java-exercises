@@ -1,0 +1,19 @@
+public class Unique{
+	public static void main(String[] args){
+		uniqueSum(3,3,5);
+	}
+	
+	public static void uniqueSum(int num1,int num2,int num3) {
+		if (num1 == num2) {
+			num1 = 0;
+			num2 = 0;
+		}else if (num2 == num3){
+			num2 = 0;
+			num3 = 0;
+		}else if (num3 == num1) {
+			num3 = 0;
+			num1 = 0;
+		}
+		System.out.println(num1 + num2 +num3);
+	}
+}
