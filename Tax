@@ -1,0 +1,32 @@
+public class Tax{
+	
+	public static void main(String[] args) {
+		System.out.println(calculateTax(31.000));
+	}
+	public static void calculateTaxAmount(double salary) {
+		if (salary < 14.999) {
+			System.out.println("Your tax is: "+0);
+		}else if (salary > 14.999 && salary <= 19.999) {
+			System.out.println("Your tax is: "+(salary/100)*10+"00");
+		}else if (salary >= 20.000 && salary <= 29.999) {
+			System.out.println("Your tax is: "+(salary/100)*15+"00");
+		}else if (salary >= 30.000 && salary <= 44.999) {
+			System.out.println("Your tax is: "+(salary/100)*20+"00");
+		}else if (salary >= 45.000 ) {
+			System.out.println("Your tax is: "+(salary/100)*25+"00");
+		}
+	}
+	public static int calculateTax(double salary) {
+		if (salary < 14.999) {
+			return 0;
+		}else if (salary > 14.999 && salary <= 19.999) {
+			return 10;
+		}else if (salary >= 20.000 && salary <= 29.999) {
+			return 15;
+		}else if (salary >= 30.000 && salary <= 44.999) {
+			return 20;
+		}else if (salary >= 45.000 ) {
+			return 25;
+		}
+	}
+}
