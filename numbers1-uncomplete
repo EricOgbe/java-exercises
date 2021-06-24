@@ -1,0 +1,63 @@
+public class numbers{
+	public static void main(String[] args) {
+		addNums(13);
+		numToChar(21);
+	}
+	public static void addNums(int num) {
+		int firstDigit = Integer.parseInt(Integer.toString(num).substring(0, 1));
+		int secondDigit = Integer.parseInt(Integer.toString(num).substring(1, 2));
+		System.out.println(firstDigit + secondDigit);
+	}
+	public static void numToChar(int nums){
+		String word = Integer.toString(nums);
+		int first = Integer.parseInt(Integer.toString(nums).substring(0, 1));
+		int second = Integer.parseInt(Integer.toString(nums).substring(1, 2));
+		int third = Integer.parseInt(Integer.toString(nums).substring(2, 3));
+		String[] numbers = {"zero","one","two","three","four","five","six","seven","eight","nine"};
+		String secondnum = numbers[second];
+		
+		if (nums == 1) {
+			System.out.println("one");
+		}else if (nums == 2){
+			System.out.println("two");
+		}else if (nums == 3){
+			System.out.println("three");
+		}else if (nums == 4){
+			System.out.println("four");
+		}else if (nums == 5){
+	        System.out.println("five");
+        }else if (nums == 6){
+			System.out.println("six");
+		}else if (nums == 7){
+			System.out.println("seven");
+		}else if (nums == 8){
+			System.out.println("eight");
+		}else if (nums == 9){
+			System.out.println("nine");
+		}else if (nums == 10){
+			System.out.println("ten");
+		}else if (nums == 11){
+			System.out.println("eleven");
+		}else if (nums == 12){
+			System.out.println("twelve");
+		}else if (nums == 13){
+			System.out.println("thir-teen");
+		}else if (nums == 14){
+			System.out.println("four-teen");
+		}else if (nums == 15){
+			System.out.println("fif-teen");
+		}else if (nums == 16){
+			System.out.println("six-teen");
+		}else if (nums == 17){
+			System.out.println("seven-teen");
+		}else if (nums == 18){
+			System.out.println("eigh-teen");
+		}else if (nums == 19){
+			System.out.println("nine-teen");
+		}else if (nums == 20){
+			System.out.println("twenty");
+		}else if (first == 2){
+			System.out.println("twenty-"+ secondnum  );
+		}                                      
+	}
+}
