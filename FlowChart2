@@ -1,0 +1,19 @@
+public class flowChart2{
+	public static void main(String[] args){
+		flow2(100);
+	}
+	public static void flow(int input) {
+		for (int i =1;input <= 200 ; input += i){
+			System.out.println(input);
+		}
+	}
+	public static void flow2(int input2) {
+		for (int y = 1; input2<=200; input2 +=y ) {
+			if (input2%2==0) {
+				System.out.println("-");
+			}else{
+				System.out.println("*");
+			}
+		}
+	}
+}
