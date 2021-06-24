@@ -25,7 +25,7 @@ public class Tax{
 			return 15;
 		}else if (salary >= 30.000 && salary <= 44.999) {
 			return 20;
-		}else if (salary >= 45.000 ) {
+		}else{
 			return 25;
 		}
 	}
