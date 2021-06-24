@@ -1,6 +1,6 @@
 public class flowChart2{
 	public static void main(String[] args){
-		flow2(100);
+		timesTen();
 	}
 	public static void flow(int input) {
 		for (int i =1;input <= 200 ; input += i){
@@ -13,6 +13,20 @@ public class flowChart2{
 				System.out.println("-");
 			}else{
 				System.out.println("*");
+			}
+		}
+	}
+	public static void timesTen(){
+		int one = 1;
+		for (int num = 1;num<11;num++){
+			System.out.println(one);
+			if(num ==10 && one == 10){
+				break;
+			}else{
+				if (num == 10) {
+					num = 1;
+					one++;
+				}
 			}
 		}
 	}
