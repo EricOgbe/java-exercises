@@ -1,0 +1,37 @@
+public class stringManipulation{
+	public static void main(String[] args){
+		weather();
+		System.out.println(count("hello there"));
+		reverse("bye now");
+	}
+	public static void weather(){
+		String sunny = "today it is sunny";
+		String rainy = "yesterday it was raining";
+		String sentence = sunny + ", " + rainy;
+		String first = sunny.substring(0,11);
+		String second = rainy.substring(17,24);
+		String third = first + " " + second;
+		System.out.println(sentence.toUpperCase());
+		System.out.println(third.toUpperCase());
+	}
+	public static int count(String word){
+		return word.split("\\s+").length;
+	}
+	public static void vertical(String chosenWord){
+		char[] wordArr2 = chosenWord.toCharArray();
+		for (char x: wordArr2){
+			System.out.println(x+"\n");
+		}
+	}
+	public static void reverse(String reversal){
+		String revWord = new StringBuilder(reversal).reverse().toString();
+		char[] wordArr = revWord.toCharArray();
+		for (char i: wordArr){
+			System.out.println(i+"\n");
+		}
+		
+	}
+	public static void findString(String sentence1,String sentence2){
+		System.out.println(sentence1.contains(sentence2));
+	}
+}
